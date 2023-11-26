@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilizando o cabeçalho */
+nav {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a2090d;
+}
+
+/* Estilizando o carrossel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilizando o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%; /* Para ocupar a largura completa */
+}
+
+footer .f-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer .f-item {
+    text-align: left;
+    max-width: 300px;
+}
+
+footer .f-item h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #a2090d;
+    padding-bottom: 5px;
+}
+
+footer .f-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .f-item ul li {
+    margin-bottom: 10px;
+}
+
+footer .f-item ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .f-item ul li a:hover {
+    color: #a2090d;
+}
+
+/* Estilos para tornar o site responsivo */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 30px 0; /* Reduzir o preenchimento em telas menores */
+    }
+
+    footer .f-items {
+        flex-direction: column; /* Alinhar verticalmente em telas menores */
+    }
+
+    footer .f-item {
+        margin-bottom: 30px; /* Espaçamento entre itens do rodapé */
+        max-width: none; /* Remover a largura máxima dos itens */
+        text-align: center; /* Centralizar texto em telas menores */
+    }
+}
