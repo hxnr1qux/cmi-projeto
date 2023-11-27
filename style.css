@@ -61,7 +61,40 @@ nav {
     background-color: #666666;
 }
 
+.acesso{
+    background-color: #3a3939;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.acesso > h2{
+    text-align: center;
+}
+
+.contatos{
+    text-align: justify;
+}
+
+
+.contatos> h2{
+    text-align: center;
+}
+
 .acesso, .contatos {
     flex: 1; 
+}
+
+.arrow-list {
+    list-style-type: none;
+}
+
+.arrow-list li::before {
+    content: "\2192";
+    margin-right: 8px;
+}
+
+.horarios > p{
+    margin-bottom: 50px;
 }
 
