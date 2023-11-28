@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilizando o cabeçalho */
+nav {
+    background-color: #fff;
+    padding: 25px; /* Aumentando o preenchimento para aumentar a altura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usando flexbox para alinhar o conteúdo */
+    justify-content: space-between; /* Alinhando conteúdo à direita */
+    align-items: center; /* Centralizando verticalmente */
+}
+
+.navbar-brand img {
+    max-width: 200px; /* Ajustando o tamanho das imagens */
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a2090d;
+}
