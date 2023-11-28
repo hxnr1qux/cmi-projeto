@@ -39,3 +39,12 @@ nav {
     text-align: center;
     color: white;
 }
+
+.pai{
+    display: flex;
+    flex-direction: row
+}
+
+.orientacoes{
+
+}
