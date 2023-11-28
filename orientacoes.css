@@ -31,3 +31,11 @@ nav {
 .navbar-nav .nav-link:hover {
     color: #a2090d;
 }
+
+.banner{
+    height: 200px;
+    width: 100%;
+    background-color: #580303;
+    text-align: center;
+    color: white;
+}
