@@ -1,3 +1,13 @@
+@keyframes slide-top {
+    0% {
+        bottom: -10px;
+    }
+
+    100% {
+        bottom: 10px;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -50,6 +60,8 @@ nav {
     padding-top: 70px;
 }
 
+/*ORIENTACOES*/
+
 #orientacoes{
     padding: 80px;
     height: 400px;
@@ -67,6 +79,33 @@ nav {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*BOTOES*/
+#botoes{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#botoes .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#botoes .btn:hover {
+    background-color: #580303;
+    color: white;
+    /* Define a cor do texto como branco ao passar o mouse */
+}
+
+/* Estilos para o texto das orientações */
+.collapse .card-body p {
+    margin-bottom: 10px;
+    /* Adiciona espaçamento entre os parágrafos */
+}
+
 
 /*FOOTER COM INFORMAÇÕES*/
 
