@@ -20,6 +20,30 @@
                 bottom: 10px;
             }
         }
+
+        #botoes{
+            margin-top: 30px;
+        }
+        
+        #botoes .btn {
+            display: block;
+            width: 100%;
+            margin-bottom: 0px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        #botoes .btn:hover {
+            background-color: #580303;
+            color: white;
+            /* Define a cor do texto como branco ao passar o mouse */
+        }
+
+        /* Estilos para o texto das orientações */
+        .collapse .card-body p {
+            margin-bottom: 10px;
+            /* Adiciona espaçamento entre os parágrafos */
+        }
     </style>
 </head>
 
@@ -65,21 +89,26 @@
 
     <div id="container">
         <div class="row">
+
             <div id="orientacoes" class="col-sm-6">
-                <h1>Orientações para Exame</h1>
+                <h1>Orientações para Exames</h1>
+                <br>
                 <p>Ao lado você encontrará algumas orientações para realizar nossos exames, maiores dúvidas, entre em
                     contato conosco.</p>
             </div>
+
             <div id="botoes" class="col-sm-6">
-                <p>
-                    <button class="btn btn-transparent" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#acuidade" aria-expanded="false" aria-controls="acuidade">
-                        Acuidade visual
-                    </button>
-                </p>
-                <div style="min-height: 120px;">
+                <div class="d-grid gap-2">
+
+                    <div>
+                        <button class="btn btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#acuidade"
+                            aria-expanded="false" aria-controls="acuidade">
+                            Acuidade visual
+                        </button>
+                    </div>
+
                     <div class="collapse collapse-horizontal" id="acuidade">
-                        <div class="card card-body" style="width: 300px;">
+                        <div class="card card-body mb-3">
                             <p>
                                 Se você está se preparando para fazer um exame de Acuidade Visual, é importante seguir
                                 algumas
@@ -181,147 +210,205 @@
                     </div>
                 </div>
                 <p>
-                    <button class="btn btn-transparent" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#audiometria" aria-expanded="false" aria-controls="audiometria">
+                <div>
+                    <button class="btn btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#audiometria"
+                        aria-expanded="false" aria-controls="audiometria">
                         Audiometria
                     </button>
-                </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="audiometria">
-                        <div class="card card-body" style="width: 300px;">
-                            <p>Chegue no horário marcado: É importante chegar pontualmente para o exame, pois atrasos
-                                podem
-                                afetar a
-                                programação do centro de testes e atrasar outros pacientes.</p>
-                            <p>Informe sobre medicamentos e histórico médico: Avise o profissional responsável sobre
-                                quaisquer
-                                medicamentos que você esteja tomando, incluindo suplementos, pois alguns podem
-                                interferir
-                                nos
-                                resultados do exame. Além disso, informe sobre seu histórico médico, especialmente se
-                                tiver
-                                problemas de saúde relacionados à audição.</p>
-                            <p>Evite exposição a ruídos intensos: Evite exposição a ruídos altos nas horas que antecedem
-                                o
-                                exame,
-                                pois eles podem temporariamente afetar sua audição e influenciar os resultados.</p>
-                            <p>Limpeza dos ouvidos: Certifique-se de que seus ouvidos estejam limpos antes do exame. No
-                                entanto,
-                                evite o uso de cotonetes, pois eles podem empurrar a cera para dentro do canal auditivo.
-                                Se
-                                você
-                                estiver preocupado com a presença de excesso de cera, consulte um médico antes do exame.
-                            </p>
-                            <p>Informe sobre problemas no ouvido: Se você estiver sentindo qualquer desconforto, dor ou
-                                infecção no
-                                ouvido, informe ao profissional antes do exame. Dependendo da situação, pode ser
-                                necessário
-                                adiar o
-                                exame até que a condição seja tratada.</p>
-                            <p>Retire objetos que possam interferir: Antes do exame, retire qualquer objeto que possa
-                                interferir com
-                                os fones de ouvido utilizados durante a audiometria, como brincos, piercings ou
-                                aparelhos
-                                auditivos.
-                            </p>
-                            <p>Colabore durante o exame: Durante o exame, siga atentamente as instruções do profissional
-                                responsável. É importante permanecer calmo e concentrado, respondendo aos estímulos
-                                sonoros
-                                conforme
-                                solicitado.</p>
-                            <p>Prepare-se para o tempo de duração: A audiometria geralmente é um exame relativamente
-                                rápido,
-                                mas
-                                pode variar dependendo da clínica e do tipo de teste. Pergunte ao profissional quanto
-                                tempo
-                                você
-                                deve reservar para o exame, para que você possa se programar adequadamente.</p>
-                            <p>Lembre-se de que essas são apenas orientações gerais e que o profissional responsável
-                                pelo
-                                exame
-                                poderá fornecer instruções específicas com base na sua situação e nos procedimentos da
-                                clínica em
-                                que você fará a audiometria.</p>
-                        </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="audiometria">
+                    <div class="card card-body mb-3">
+                        <p>Chegue no horário marcado: É importante chegar pontualmente para o exame, pois atrasos
+                            podem
+                            afetar a
+                            programação do centro de testes e atrasar outros pacientes.</p>
+                        <p>Informe sobre medicamentos e histórico médico: Avise o profissional responsável sobre
+                            quaisquer
+                            medicamentos que você esteja tomando, incluindo suplementos, pois alguns podem
+                            interferir
+                            nos
+                            resultados do exame. Além disso, informe sobre seu histórico médico, especialmente se
+                            tiver
+                            problemas de saúde relacionados à audição.</p>
+                        <p>Evite exposição a ruídos intensos: Evite exposição a ruídos altos nas horas que antecedem
+                            o
+                            exame,
+                            pois eles podem temporariamente afetar sua audição e influenciar os resultados.</p>
+                        <p>Limpeza dos ouvidos: Certifique-se de que seus ouvidos estejam limpos antes do exame. No
+                            entanto,
+                            evite o uso de cotonetes, pois eles podem empurrar a cera para dentro do canal auditivo.
+                            Se
+                            você
+                            estiver preocupado com a presença de excesso de cera, consulte um médico antes do exame.
+                        </p>
+                        <p>Informe sobre problemas no ouvido: Se você estiver sentindo qualquer desconforto, dor ou
+                            infecção no
+                            ouvido, informe ao profissional antes do exame. Dependendo da situação, pode ser
+                            necessário
+                            adiar o
+                            exame até que a condição seja tratada.</p>
+                        <p>Retire objetos que possam interferir: Antes do exame, retire qualquer objeto que possa
+                            interferir com
+                            os fones de ouvido utilizados durante a audiometria, como brincos, piercings ou
+                            aparelhos
+                            auditivos.
+                        </p>
+                        <p>Colabore durante o exame: Durante o exame, siga atentamente as instruções do profissional
+                            responsável. É importante permanecer calmo e concentrado, respondendo aos estímulos
+                            sonoros
+                            conforme
+                            solicitado.</p>
+                        <p>Prepare-se para o tempo de duração: A audiometria geralmente é um exame relativamente
+                            rápido,
+                            mas
+                            pode variar dependendo da clínica e do tipo de teste. Pergunte ao profissional quanto
+                            tempo
+                            você
+                            deve reservar para o exame, para que você possa se programar adequadamente.</p>
+                        <p>Lembre-se de que essas são apenas orientações gerais e que o profissional responsável
+                            pelo
+                            exame
+                            poderá fornecer instruções específicas com base na sua situação e nos procedimentos da
+                            clínica em
+                            que você fará a audiometria.</p>
                     </div>
                 </div>
+
                 <p>
-                    <button class="btn btn-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#raiox"
+                <div>
+                    <button class="btn btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#raiox"
                         aria-expanded="false" aria-controls="raiox">
                         Raio X
                     </button>
-                </p>
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="raiox">
-                        <div class="card card-body" style="width: 300px;">
-                            <p>Se um paciente está prestes a fazer um exame de raio X, é importante seguir algumas
-                                orientações para
-                                garantir que o procedimento seja seguro e eficaz. Aqui estão algumas diretrizes gerais
-                                que
-                                os
-                                pacientes devem seguir ao fazer um exame de raio X:</p>
-                            <p>1. Vista Roupas Adequadas: Dependendo da área do corpo que será examinada, pode ser
-                                necessário
-                                remover roupas e joias da região em questão. Você será fornecido com uma bata ou avental
-                                para vestir
-                                durante o exame. Vestir roupas confortáveis e de fácil remoção pode agilizar o processo.
-                            </p>
-                            <p>2. Remova Objetos Metálicos: Antes do exame, remova qualquer objeto metálico que possa
-                                interferir com
-                                a imagem de raio X, como joias, relógios, cintos com fivelas metálicas e óculos de
-                                metal.
-                            </p>
-                            <p>3. Informe o Profissional de Saúde: É importante informar o técnico ou radiologista sobre
-                                qualquer
-                                gravidez, histórico de alergias a contrastes ou medicamentos, ou se você tem implantes
-                                ou
-                                dispositivos médicos, como marca-passos.</p>
-                            <p>
-                                4. Gravidez e Amamentação:* Se você está grávida ou suspeita estar grávida, informe
-                                imediatamente o
-                                profissional de saúde. Em alguns casos, os raios X podem ser adiados ou evitados durante
-                                a
-                                gravidez.
-                                Se estiver amamentando, informe o profissional, pois pode haver orientações específicas.
-                            </p>
-                            <p>5. Seguir Instruções do Profissional: O técnico de raio X fornecerá instruções
-                                específicas
-                                sobre como
-                                se posicionar para obter as imagens necessárias. É importante seguir essas orientações
-                                para
-                                garantir
-                                imagens claras e precisas.</p>
-                            <p>
-                                6. Permaneça Quieto: Durante a captura das imagens de raio X, é importante permanecer
-                                imóvel
-                                para
-                                evitar qualquer movimento que possa causar distorções na imagem.
-                            </p>
-                            <p>7. Respire Normalmente: Em alguns exames, como radiografias torácicas, você pode ser
-                                instruído a
-                                prender a respiração brevemente para evitar movimentos que possam afetar a qualidade da
-                                imagem.</p>
-                            <p>8. Proteção Radiológica: Se o exame envolver exposição a radiação, o técnico de raio X
-                                tomará
-                                medidas
-                                para minimizar a exposição desnecessária. Isso pode incluir o uso de aventais de chumbo
-                                para
-                                proteger áreas sensíveis do corpo.</p>
-                            <p>9. Perguntas e Preocupações: Se você tiver alguma dúvida, preocupação ou desconforto
-                                relacionado ao
-                                exame, não hesite em perguntar ao técnico ou radiologista antes do procedimento.</p>
-                            <p>Lembrando que as orientações específicas podem variar dependendo do tipo de exame de raio
-                                X e
-                                das
-                                práticas da instituição de saúde. É importante seguir as instruções fornecidas pelo
-                                profissional de
-                                saúde para garantir um exame seguro e bem-sucedido.</p>
-                        </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="raiox">
+                    <div class="card card-body mb-3">
+                        <p>Se um paciente está prestes a fazer um exame de raio X, é importante seguir algumas
+                            orientações para
+                            garantir que o procedimento seja seguro e eficaz. Aqui estão algumas diretrizes gerais
+                            que
+                            os
+                            pacientes devem seguir ao fazer um exame de raio X:</p>
+                        <p>1. Vista Roupas Adequadas: Dependendo da área do corpo que será examinada, pode ser
+                            necessário
+                            remover roupas e joias da região em questão. Você será fornecido com uma bata ou avental
+                            para vestir
+                            durante o exame. Vestir roupas confortáveis e de fácil remoção pode agilizar o processo.
+                        </p>
+                        <p>2. Remova Objetos Metálicos: Antes do exame, remova qualquer objeto metálico que possa
+                            interferir com
+                            a imagem de raio X, como joias, relógios, cintos com fivelas metálicas e óculos de
+                            metal.
+                        </p>
+                        <p>3. Informe o Profissional de Saúde: É importante informar o técnico ou radiologista sobre
+                            qualquer
+                            gravidez, histórico de alergias a contrastes ou medicamentos, ou se você tem implantes
+                            ou
+                            dispositivos médicos, como marca-passos.</p>
+                        <p>
+                            4. Gravidez e Amamentação:* Se você está grávida ou suspeita estar grávida, informe
+                            imediatamente o
+                            profissional de saúde. Em alguns casos, os raios X podem ser adiados ou evitados durante
+                            a
+                            gravidez.
+                            Se estiver amamentando, informe o profissional, pois pode haver orientações específicas.
+                        </p>
+                        <p>5. Seguir Instruções do Profissional: O técnico de raio X fornecerá instruções
+                            específicas
+                            sobre como
+                            se posicionar para obter as imagens necessárias. É importante seguir essas orientações
+                            para
+                            garantir
+                            imagens claras e precisas.</p>
+                        <p>
+                            6. Permaneça Quieto: Durante a captura das imagens de raio X, é importante permanecer
+                            imóvel
+                            para
+                            evitar qualquer movimento que possa causar distorções na imagem.
+                        </p>
+                        <p>7. Respire Normalmente: Em alguns exames, como radiografias torácicas, você pode ser
+                            instruído a
+                            prender a respiração brevemente para evitar movimentos que possam afetar a qualidade da
+                            imagem.</p>
+                        <p>8. Proteção Radiológica: Se o exame envolver exposição a radiação, o técnico de raio X
+                            tomará
+                            medidas
+                            para minimizar a exposição desnecessária. Isso pode incluir o uso de aventais de chumbo
+                            para
+                            proteger áreas sensíveis do corpo.</p>
+                        <p>9. Perguntas e Preocupações: Se você tiver alguma dúvida, preocupação ou desconforto
+                            relacionado ao
+                            exame, não hesite em perguntar ao técnico ou radiologista antes do procedimento.</p>
+                        <p>Lembrando que as orientações específicas podem variar dependendo do tipo de exame de raio
+                            X e
+                            das
+                            práticas da instituição de saúde. É importante seguir as instruções fornecidas pelo
+                            profissional de
+                            saúde para garantir um exame seguro e bem-sucedido.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    </div>
+
+    <div class="info">
+        <!-- Seção de Horário de Atendimento -->
+        <div class="horarios">
+            <h3>Horário de Atendimento</h3>
+            <hr>
+            <p>Segunda-feira a Quinta-feira: 07:00 às 17:00h</p>
+            <hr>
+            <p>Sexta-feira: 07:00 às 16:00h</p>
+            <hr>
+            <p>Sábado e domingo: <strong>Fechado</strong></p>
+            <hr>
+        </div>
+
+        <!-- Seção de Acesso Rápido -->
+        <div class="acesso">
+            <h2>Acesso Rápido</h2>
+            <ul class="arrow-list">
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="orientacoes.html">Orientações</a></li>
+                <li><a href="#">Resultado de Exames</a></li>
+            </ul>
+        </div>
+
+        <!-- Seção de Informações de Contato -->
+        <div class="contatos">
+            <h2>Contatos</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <p>Telefone: <span><a href="tel:7336133301">73 3613-3301</a></span></p>
+                </li>
+                <li>
+                    <i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp: <span><a href="https://api.whatsapp.com/send?phone=557336133301" target="_blank">73
+                                3613-3301</a></span></p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: <span><a
+                                href="mailto:atendimento@cmiocupacional.com.br">atendimento@cmiocupacional.com.br</a></span>
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-map"></i>
+                    <p>Endereço: <span><a
+                                href="https://www.google.com/maps/@-14.7913552,-39.2764508,3a,75y,110.55h,90t/data=!3m6!1e1!3m4!1s3uhuBj-xh50vpZBXyQMmow!2e0!7i16384!8i8192?entry=ttu"
+                                target="_blank">Av. Duque de Caxias, 281</a><br>
+                            Centro<br>
+                            CEP: 45.600-211<br>
+                            Itabuna/BA</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
