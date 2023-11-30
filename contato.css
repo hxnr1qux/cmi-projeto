@@ -38,6 +38,7 @@ nav {
     0% {
         bottom: -10px;
     }
+
     100% {
         bottom: 10px;
     }
@@ -128,7 +129,7 @@ nav {
     background-color: #590303;
 }
 
-.banner > h1 {
+.banner>h1 {
     padding: 80px 0px 0px 30px;
 }
 
@@ -137,21 +138,18 @@ nav {
 
 .contatos {
     text-align: justify;
-    display: flex;
-    flex: 1;
     margin-top: -10px;
     padding-top: 20px;
 }
 
-.contatos > h2{
+.contatos>h2 {
     text-align: center;
 }
 
-.box, .box2 {
+.box,
+.box2 {
     padding-top: 100px;
-    flex: 1;
     height: 400px;
-    display: inline-block;
     margin: 0px 5px;
     box-sizing: border-box;
     text-align: center;
@@ -167,13 +165,15 @@ nav {
     color: white;
 }
 
-#email > p {
+#email>p {
     font-size: larger;
 }
 
-#map-icon, #email-icon {
+#map-icon,
+#email-icon {
     color: #a2090d;
 }
+
 
 /* Footer */
 .info {
@@ -187,7 +187,8 @@ nav {
     display: flex;
 }
 
-.horarios, .acesso{
+.horarios,
+.acesso {
     flex: 1;
     margin-top: -10px;
     padding-top: 20px;
@@ -203,7 +204,7 @@ nav {
     text-align: justify;
 }
 
-.acesso > h2{
+.acesso>h2 {
     text-align: center;
 }
 
@@ -216,7 +217,6 @@ nav {
     margin-right: 8px;
 }
 
-.horarios > p {
+.horarios>p {
     margin-bottom: 50px;
 }
-
