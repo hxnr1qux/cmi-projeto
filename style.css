@@ -9,15 +9,20 @@ body {
 /* Estilizando o cabeçalho */
 nav {
     background-color: #fff;
-    padding: 15px 25px; /* Aumentando o preenchimento para aumentar a altura */
+    padding: 15px 25px;
+    /* Aumentando o preenchimento para aumentar a altura */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Usando flexbox para alinhar o conteúdo */
-    justify-content: space-between; /* Alinhando conteúdo à direita */
-    align-items: center; /* Centralizando verticalmente */
+    display: flex;
+    /* Usando flexbox para alinhar o conteúdo */
+    justify-content: space-between;
+    /* Alinhando conteúdo à direita */
+    align-items: center;
+    /* Centralizando verticalmente */
 }
 
 .navbar-brand img {
-    max-width: 150px; /* Ajustando o tamanho das imagens */
+    max-width: 150px;
+    /* Ajustando o tamanho das imagens */
     height: auto;
 }
 
@@ -45,15 +50,19 @@ nav {
     padding-top: 10px;
     margin: 0;
     width: 100%;
-    min-height: 600px; /* Alterei para min-height para permitir ajustes de altura */
+    min-height: 600px;
+    /* Alterei para min-height para permitir ajustes de altura */
     text-align: center;
     background-color: #1D2024;
     color: white;
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha */
 }
 
-.horarios, .acesso, .contatos {
+.horarios,
+.acesso,
+.contatos {
     flex: 1;
     padding: 20px;
     text-align: center;
@@ -70,14 +79,18 @@ nav {
 /* Ajustes para telas menores */
 @media screen and (max-width: 768px) {
     .info {
-        flex-direction: column; /* Coloca os itens um em cima do outro */
-        min-height: auto; /* Ajusta a altura conforme necessário */
+        flex-direction: column;
+        /* Coloca os itens um em cima do outro */
+        min-height: auto;
+        /* Ajusta a altura conforme necessário */
     }
 
-    .horarios, .acesso, .contatos {
-        flex: 1 1 100%; /* Ocupa 100% da largura */
-        margin-bottom: 20px; /* Adiciona um espaçamento entre os itens */
+    .horarios,
+    .acesso,
+    .contatos {
+        flex: 1 1 100%;
+        /* Ocupa 100% da largura */
+        margin-bottom: 20px;
+        /* Adiciona um espaçamento entre os itens */
     }
 }
-
-
