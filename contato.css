@@ -33,102 +33,6 @@ nav {
     color: #a2090d;
 }
 
-/* Carousel */
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer */
-.info {
-    padding-top: 10px;
-    margin: 0px 0px;
-    width: 100%;
-    height: 600px;
-    text-align: center;
-    background-color: #1d2024;
-    color: white;
-    display: flex;
-}
-
-.horarios, .acesso, .contatos {
-    flex: 1;
-    margin-top: -10px;
-    padding-top: 20px;
-}
-
-.horarios {
-    height: 600px;
-    background-color: #666666;
-}
-
-.acesso {
-    background-color: #3a3939;
-    text-align: justify;
-}
-
-.acesso > h2, .contatos > h2 {
-    text-align: center;
-}
-
-.arrow-list {
-    list-style-type: none;
-}
-
-.arrow-list li::before {
-    content: "\2192";
-    margin-right: 8px;
-}
-
-.horarios > p {
-    margin-bottom: 50px;
-}
-
-.contatos {
-    text-align: justify;
-    display: flex;
-}
-
-/* Banner */
-.banner {
-    height: 200px;
-    color: white;
-    background-color: #590303;
-}
-
-.banner > h1 {
-    padding: 80px 0px 0px 30px;
-}
-
-/* Boxes */
-.box, .box2 {
-    padding-top: 100px;
-    flex: 1;
-    height: 400px;
-    display: inline-block;
-    margin: 0px 5px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.box {
-    color: #a2090d;
-    background-color: white;
-}
-
-.box2 {
-    background-color: #a2090d;
-    color: white;
-}
-
-#email > p {
-    font-size: larger;
-}
-
-#map-icon, #email-icon {
-    color: #a2090d;
-}
-
 /* LGPD Banner */
 @keyframes slide-top {
     0% {
@@ -207,5 +111,112 @@ nav {
 
 .banner-lgpd.accept {
     display: none;
+}
+
+
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Banner */
+.banner {
+    height: 200px;
+    color: white;
+    background-color: #590303;
+}
+
+.banner > h1 {
+    padding: 80px 0px 0px 30px;
+}
+
+
+/* Boxes */
+
+.contatos {
+    text-align: justify;
+    display: flex;
+    flex: 1;
+    margin-top: -10px;
+    padding-top: 20px;
+}
+
+.contatos > h2{
+    text-align: center;
+}
+
+.box, .box2 {
+    padding-top: 100px;
+    flex: 1;
+    height: 400px;
+    display: inline-block;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box {
+    color: #a2090d;
+    background-color: white;
+}
+
+.box2 {
+    background-color: #a2090d;
+    color: white;
+}
+
+#email > p {
+    font-size: larger;
+}
+
+#map-icon, #email-icon {
+    color: #a2090d;
+}
+
+/* Footer */
+.info {
+    padding-top: 10px;
+    margin: 0px 0px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: #1d2024;
+    color: white;
+    display: flex;
+}
+
+.horarios, .acesso{
+    flex: 1;
+    margin-top: -10px;
+    padding-top: 20px;
+}
+
+.horarios {
+    height: 600px;
+    background-color: #666666;
+}
+
+.acesso {
+    background-color: #3a3939;
+    text-align: justify;
+}
+
+.acesso > h2{
+    text-align: center;
+}
+
+.arrow-list {
+    list-style-type: none;
+}
+
+.arrow-list li::before {
+    content: "\2192";
+    margin-right: 8px;
+}
+
+.horarios > p {
+    margin-bottom: 50px;
 }
 
