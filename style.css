@@ -9,7 +9,7 @@ body {
 /* Estilizando o cabeçalho */
 nav {
     background-color: #fff;
-    padding: 25px; /* Aumentando o preenchimento para aumentar a altura */
+    padding: 15px 25px; /* Aumentando o preenchimento para aumentar a altura */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex; /* Usando flexbox para alinhar o conteúdo */
     justify-content: space-between; /* Alinhando conteúdo à direita */
@@ -17,13 +17,13 @@ nav {
 }
 
 .navbar-brand img {
-    max-width: 200px; /* Ajustando o tamanho das imagens */
+    max-width: 150px; /* Ajustando o tamanho das imagens */
     height: auto;
 }
 
 .navbar-nav .nav-link {
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -50,7 +50,7 @@ nav {
     text-align: center;
     background-color: #1D2024;
     color: white;
-    display: flex; 
+    display: flex;
 }
 
 .horarios {
