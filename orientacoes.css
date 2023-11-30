@@ -62,7 +62,7 @@ nav {
 
 /*ORIENTACOES*/
 
-#orientacoes{
+#orientacoes {
     padding: 80px;
     height: 400px;
     width: 600px;
@@ -70,18 +70,18 @@ nav {
 
 }
 
-#orientacoes > h1{
+#orientacoes>h1 {
     text-align: center;
 }
 
-#orientacoes > p{
+#orientacoes>p {
     text-align: justify;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*BOTOES*/
-#botoes{
+#botoes {
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -112,59 +112,55 @@ nav {
 
 .info {
     padding-top: 10px;
-    margin: 0px 0px;
+    margin: 0;
     width: 100%;
-    height: 600px;
+    min-height: 600px;
+    /* Alterei para min-height para permitir ajustes de altura */
     text-align: center;
     background-color: #1D2024;
     color: white;
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha */
+}
+
+.horarios,
+.acesso,
+.contatos {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
 }
 
 .horarios {
-    flex: 1;
-    margin-top: -10px;
-    padding-top: 20px;
-    height: 600px;
     background-color: #666666;
 }
 
-.acesso{
+.acesso {
     background-color: #3a3939;
-    margin-top: -10px;
-    padding-top: 20px;
-    text-align: justify;
 }
 
-.acesso > h2{
-    text-align: center;
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        /* Coloca os itens um em cima do outro */
+        min-height: auto;
+        /* Ajusta a altura conforme necessário */
+    }
+
+    .horarios,
+    .acesso,
+    .contatos {
+        flex: 1 1 100%;
+        /* Ocupa 100% da largura */
+        margin-bottom: 20px;
+        /* Adiciona um espaçamento entre os itens */
+    }
 }
 
-.contatos{
-    text-align: justify;
-}
 
 
-.contatos> h2{
-    text-align: center;
-}
-
-.acesso, .contatos {
-    flex: 1; 
-}
-
-.arrow-list {
-    list-style-type: none;
-}
-
-.arrow-list li::before {
-    content: "\2192";
-    margin-right: 8px;
-}
-
-.horarios > p{
-    margin-bottom: 50px;
-}
 
 strong {
     color: black;
