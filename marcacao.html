@@ -153,6 +153,8 @@
                     <option value="exame1">Raio X</option>
                     <option value="exame2">Audiometria</option>
                     <option value="exame3">Acuidade Visual</option>
+                    <option value="exame5">EEG-Eletroencefalograma</option>
+                    <option value="exame5">ECG-Eletrocardiograma</option>
                     <!-- Adicione mais opções conforme necessário -->
                 </select>
             </div>
@@ -211,7 +213,7 @@
             // Verifica se ambos os campos foram preenchidos
             if (nome !== "" && data !== "") {
                 // Exibe a mensagem com os dados inseridos no modal
-                var mensagem = "Parabéns " + nome + ", sua consulta foi agendada para " + data + "!";
+                var mensagem = "Parabéns, " + nome + "! Sua consulta foi agendada para " + data + "!";
                 document.getElementById('mensagemCorpo').innerHTML = "<p>" + mensagem + "</p>";
 
                 // Abre o modal
