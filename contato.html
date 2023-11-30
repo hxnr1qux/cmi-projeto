@@ -11,88 +11,8 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-
     <style>
-        @keyframes slide-top {
-            0% {
-                bottom: -10px;
-            }
-
-            100% {
-                bottom: 10px;
-            }
-        }
-
-        .banner-lgpd {
-            position: fixed;
-            left: 1rem;
-            right: 1rem;
-            bottom: -400px;
-            z-index: 29999999;
-            animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
-        }
-
-        .banner-lgpd__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            padding: 0.8rem 1.5rem;
-            box-sizing: border-box;
-            flex-direction: column;
-        }
-
-        @media (min-width: 561px) {
-            .banner-lgpd__container {
-                flex-direction: row;
-            }
-        }
-
-        @media (max-width: 560px) {
-            .banner-lgpd__column {
-                width: 100%;
-            }
-        }
-
-        .banner-lgpd__column p {
-            font-family: "Roboto", sans-serif;
-            font-size: 15px;
-            color: white;
-            margin: 0;
-            font-weight: 100;
-            line-height: 20px;
-        }
-
-        .banner-lgpd__column p a {
-            font-family: "Roboto", sans-serif;
-            color: #e4032e;
-            font-weight: 400;
-        }
-
-        .banner-lgpd__accept {
-            font-family: "Roboto", sans-serif;
-            background-color: #e4032e;
-            color: #ffffff;
-            border: 0;
-            padding: 0.8rem 2rem;
-            border-radius: 6px;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-
-        @media (max-width: 560px) {
-            .banner-lgpd__accept {
-                width: 100%;
-                margin-top: 10px;
-                margin-left: 0;
-            }
-        }
-
-        .banner-lgpd.accept {
-            display: none;
-        }
-
+        /* Additional Styles */
         strong {
             color: black;
             background-color: white;
@@ -107,8 +27,8 @@
         }
 
         a:hover {
-            text-decoration: underline #A2090D;
-            color: #A2090D;
+            text-decoration: underline #a2090d;
+            color: #a2090d;
         }
 
         li {
@@ -116,8 +36,6 @@
             padding-bottom: 8px;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -164,7 +82,7 @@
 
     <div class="contatos">
         <div class="box">
-            <a href="https://maps.google.com/?q=latitude,longitude" target="_blank">
+            <a href="https://www.google.com/local/place/fid/0x739ab4cdcf113db:0x6e4a8640db7e670a/photosphere?iu=https://lh5.googleusercontent.com/p/AF1QipPs2EmjAZvEx-6Xszci-m_DfWOmanCf9JFCEFVj%3Dw160-h106-k-no-pi-7.108104-ya1.1496062-ro9.211415-fo100&ik=CAoSLEFGMVFpcFBzMkVtakFadkV4LTZYc3pjaS1tX0RmV09tYW5DZjlKRkNFRlZq" target="_blank">
                 <i class="fas fa-map-marker-alt fa-2x" id="map-icon"></i>
             </a>
             <h1>Endereço</h1>
@@ -179,14 +97,14 @@
             </a>
             <h4>Telefones</h4>
             <h2><a href="tel:7336133301" style="color: #FFFFFF"> 73 3613-3301</a><br>
-                <i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=557336133301"
+                <i class="fab fa-whatsapp"></i> <a href="https://encurtador.com.br/mEMZ7"
                     target="_blank"="" style="color: #FFFFFF"> 73 3613-3301</a>
             </h2>
         </div>
         <div id="email" class="box">
             <a href="mailto:seu-email@example.com" id="email-icon">
                 <i class="far fa-envelope fa-2x"></i>
-              </a>
+            </a>
             <h1>Email</h1>
             <p>atendimento@cmiocupacional.com.br</p>
         </div>

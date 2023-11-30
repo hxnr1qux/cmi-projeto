@@ -1,3 +1,4 @@
+/* Reset CSS */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,18 +7,18 @@ body {
     color: #333;
 }
 
-/* Estilizando o cabeçalho */
+/* Header */
 nav {
     background-color: #fff;
-    padding: 25px; /* Aumentando o preenchimento para aumentar a altura */
+    padding: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Usando flexbox para alinhar o conteúdo */
-    justify-content: space-between; /* Alinhando conteúdo à direita */
-    align-items: center; /* Centralizando verticalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-brand img {
-    max-width: 200px; /* Ajustando o tamanho das imagens */
+    max-width: 200px;
     height: auto;
 }
 
@@ -32,57 +33,42 @@ nav {
     color: #a2090d;
 }
 
-/* Estilizando o carrossel */
+/* Carousel */
 .carousel-inner img {
     width: 100%;
     height: auto;
 }
 
-
-/*FOOTER COM INFORMAÇÕES*/
-
-
+/* Footer */
 .info {
     padding-top: 10px;
     margin: 0px 0px;
     width: 100%;
     height: 600px;
     text-align: center;
-    background-color: #1D2024;
+    background-color: #1d2024;
     color: white;
-    display: flex; 
+    display: flex;
 }
 
-.horarios {
+.horarios, .acesso, .contatos {
     flex: 1;
     margin-top: -10px;
     padding-top: 20px;
+}
+
+.horarios {
     height: 600px;
     background-color: #666666;
 }
 
-.acesso{
+.acesso {
     background-color: #3a3939;
-    margin-top: -10px;
-    padding-top: 20px;
     text-align: justify;
 }
 
-.acesso > h2{
+.acesso > h2, .contatos > h2 {
     text-align: center;
-}
-
-.contatos{
-    text-align: justify;
-}
-
-
-.contatos> h2{
-    text-align: center;
-}
-
-.acesso, .contatos {
-    flex: 1; 
 }
 
 .arrow-list {
@@ -94,45 +80,28 @@ nav {
     margin-right: 8px;
 }
 
-.horarios > p{
+.horarios > p {
     margin-bottom: 50px;
 }
 
-div.breadcrump{
-    width: 50px;
-    height: 50px;
-}
-
-.contatos{
+.contatos {
+    text-align: justify;
     display: flex;
-
 }
 
-/*banner*/
-.banner{
+/* Banner */
+.banner {
     height: 200px;
     color: white;
     background-color: #590303;
 }
 
-.banner > h1{
+.banner > h1 {
     padding: 80px 0px 0px 30px;
 }
 
-
-/*boxes*/
-.box{
-    color: #A2090D;
-    background-color: white;
-    
-}
-
-.box2{
-    background-color: #A2090D;
-    color: white;
-}
-
-.box, .box2{
+/* Boxes */
+.box, .box2 {
     padding-top: 100px;
     flex: 1;
     height: 400px;
@@ -142,63 +111,101 @@ div.breadcrump{
     text-align: center;
 }
 
-#email > p{
+.box {
+    color: #a2090d;
+    background-color: white;
+}
+
+.box2 {
+    background-color: #a2090d;
+    color: white;
+}
+
+#email > p {
     font-size: larger;
 }
 
-#map-icon{
-    color: #A2090D;
+#map-icon, #email-icon {
+    color: #a2090d;
 }
 
-#email-icon{
-    color: #A2090D;
+/* LGPD Banner */
+@keyframes slide-top {
+    0% {
+        bottom: -10px;
+    }
+    100% {
+        bottom: 10px;
+    }
 }
 
-/*FOOTER COM INFORMAÇÕES*/
+.banner-lgpd {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: -400px;
+    z-index: 29999999;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
+}
 
+.banner-lgpd__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    box-sizing: border-box;
+    flex-direction: column;
+}
 
-.info {
-    padding-top: 10px;
-    margin: 0px 0px;
-    width: 100%;
-    height: 600px;
-    text-align: center;
-    background-color: #1D2024;
+@media (min-width: 561px) {
+    .banner-lgpd__container {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 560px) {
+    .banner-lgpd__column {
+        width: 100%;
+    }
+}
+
+.banner-lgpd__column p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
     color: white;
-    display: flex; 
+    margin: 0;
+    font-weight: 100;
+    line-height: 20px;
 }
 
-.horarios {
-    flex: 1;
-    margin-top: -10px;
-    padding-top: 20px;
-    height: 600px;
-    background-color: #666666;
+.banner-lgpd__column p a {
+    font-family: "Roboto", sans-serif;
+    color: #e4032e;
+    font-weight: 400;
 }
 
-.acesso{
-    background-color: #3a3939;
-    margin-top: -10px;
-    padding-top: 20px;
-    text-align: justify;
-    flex: 1;
+.banner-lgpd__accept {
+    font-family: "Roboto", sans-serif;
+    background-color: #e4032e;
+    color: #ffffff;
+    border: 0;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-.acesso > h2{
-    text-align: center;
+@media (max-width: 560px) {
+    .banner-lgpd__accept {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
 }
 
-
-.arrow-list {
-    list-style-type: none;
-}
-
-.arrow-list li::before {
-    content: "\2192";
-    margin-right: 8px;
-}
-
-.horarios > p{
-    margin-bottom: 50px;
+.banner-lgpd.accept {
+    display: none;
 }
 
