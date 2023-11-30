@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Marcação de Exame</title>
-  <link rel="stylesheet" href="marcacao.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    @keyframes slide-top {
+    <meta charset="UTF-8">
+    <title>Marcação de Exame</title>
+    <link rel="stylesheet" href="marcacao.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @keyframes slide-top {
             0% {
                 bottom: -10px;
             }
@@ -85,8 +86,9 @@
         .banner-lgpd.accept {
             display: none;
         }
-  </style>
+    </style>
 </head>
+
 <body>
     <!--Menu-->
     <nav class="navbar navbar-expand-lg bg-white">
@@ -129,45 +131,98 @@
     </div>
 
 
-  <div class="container mt-4">
-    <h1 class="mb-4">Marcação de Exame</h1>
-    <form>
-      <div class="form-group">
-        <label for="nome">Nome:</label>
-        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-      </div>
-      <div class="form-group">
-        <label for="telefone">Telefone:</label>
-        <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
-      </div>
-      <div class="form-group">
-        <label for="exame">Tipo de Exame:</label>
-        <select class="form-control" id="exame">
-          <option value="exame1">Raio X</option>
-          <option value="exame2">Audiometria</option>
-          <option value="exame3">Acuidade Visual</option>
-          <!-- Adicione mais opções conforme necessário -->
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="data">Data do Exame:</label>
-        <input type="date" class="form-control" id="data">
-      </div>
-      <div class="form-group">
-        <label for="mensagem">Mensagem:</label>
-        <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem (opcional)"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-  </div>
+    <div class="container mt-4">
+        <h1 class="mb-4">Marcação de Exame</h1>
+        <form id="exameForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="form-group">
+                <label for="exame">Tipo de Exame:</label>
+                <select class="form-control" id="exame">
+                    <option value="exame1">Raio X</option>
+                    <option value="exame2">Audiometria</option>
+                    <option value="exame3">Acuidade Visual</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data">Data do Exame:</label>
+                <input type="date" class="form-control" id="data">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea class="form-control" id="mensagem" rows="3"
+                    placeholder="Digite sua mensagem (opcional)"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="enviarFormulario()">Enviar</button>
+        </form>
+    </div>
+    </div>
 
-  <!-- Adicionando scripts do Bootstrap e quaisquer outros scripts necessários -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Se estiver usando jQuery com Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+    <div class="modal" id="mensagemModal" tabindex="-1" role="dialog" aria-labelledby="mensagemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mensagemModalLabel">Mensagem</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="mensagemCorpo">
+                    <!-- Aqui é onde a mensagem será exibida -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Adicionando scripts do Bootstrap e quaisquer outros scripts necessários -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function enviarFormulario() {
+            // Captura dos valores dos campos do formulário
+            var nome = document.getElementById('nome').value;
+            var data = document.getElementById('data').value;
+
+            // Verifica se ambos os campos foram preenchidos
+            if (nome !== "" && data !== "") {
+                // Exibe a mensagem com os dados inseridos no modal
+                var mensagem = "Parabéns " + nome + ", sua consulta foi agendada para " + data + "!";
+                document.getElementById('mensagemCorpo').innerHTML = "<p>" + mensagem + "</p>";
+
+                // Abre o modal
+                $('#mensagemModal').modal('show');
+            } else {
+                // Se algum campo estiver vazio, exibe um aviso
+                alert("Por favor, preencha todos os campos.");
+            }
+        }
+    </script>
+
+
 </body>
+
 </html>
