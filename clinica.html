@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clinica.css">
+    <title>CMI - CENTRO MÉDICO E IMAGENS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <style>
+        @keyframes slide-top {
+            0% {
+                bottom: -10px;
+            }
+
+            100% {
+                bottom: 10px;
+            }
+        }
+
+        .banner-lgpd {
+            position: fixed;
+            left: 1rem;
+            right: 1rem;
+            bottom: -400px;
+            z-index: 29999999;
+            animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
+        }
+
+        .banner-lgpd__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 0.8rem 1.5rem;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+
+        @media (min-width: 561px) {
+            .banner-lgpd__container {
+                flex-direction: row;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .banner-lgpd__column {
+                width: 100%;
+            }
+        }
+
+        .banner-lgpd__column p {
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            color: white;
+            margin: 0;
+            font-weight: 100;
+            line-height: 20px;
+        }
+
+        .banner-lgpd__column p a {
+            font-family: "Roboto", sans-serif;
+            color: #e4032e;
+            font-weight: 400;
+        }
+
+        .banner-lgpd__accept {
+            font-family: "Roboto", sans-serif;
+            background-color: #e4032e;
+            color: #ffffff;
+            border: 0;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 560px) {
+            .banner-lgpd__accept {
+                width: 100%;
+                margin-top: 10px;
+                margin-left: 0;
+            }
+        }
+
+        .banner-lgpd.accept {
+            display: none;
+        }
+
+        strong {
+            color: black;
+            background-color: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        a {
+            font-style: normal;
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline #A2090D;
+            color: #A2090D;
+        }
+
+        li {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="imagens/logo.png" alt="logo cmi"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" target="_self">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clinica.html">A Clinica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html" target="_self">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sobre nós
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Resultado de Exames</a></li>
+                            <li><a class="dropdown-item" href="marcacao.html">Marcação de Exames</a></li>
+                            <li><a class="dropdown-item" href="orientacoes.html">Orientações</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Fim do menu-->
+
+
+
+    <!--início-informações da clínica-->
+    <div class="information">
+        <div class="container">
+            <div class="all-itens">
+                <h1 class="banner">Conheça nossa clínica</h1>
+                <h3>
+                    Única Clinica de Medicina Ocupacional em Itabuna que realiza todos os exames dentro da própria
+                    unidade, incluindo Raio X
+                </h3>
+
+                <p align="justify" style="font-size:16px">
+                    Clínica Epecializada em Medicina Ocupacional, onde todos os Exames são realizados dentro da nossa
+                    unidade:<br>
+
+                    >> Atendimento Clinico<br>
+                    >> Atendimento Psicosocial<br>
+                    >> Acuidade Visual<br>
+                    >> Audiometria<br>
+                    >> ECG, EEG, Espirometria, Exames Laboratoriais, Toxicológico<br>
+                    >> Raio - X<br>
+                    <br><br>
+                    Nossa equipe é composta por especialistas dedicados, cada um destacando-se em sua respectiva área de
+                    atuação. Acreditamos que a expertise é a base para uma assistência excepcional, e é por isso que
+                    selecionamos profissionais que compartilham do nosso compromisso com a excelência. Desde o momento
+                    em que um paciente entra em nossa clínica, até o acompanhamento pós-atendimento, nossa equipe se
+                    empenha em oferecer um cuidado compassivo e seguro.
+                    <br><br>
+                    Reconhecemos a importância de tratar cada pessoa como um indivíduo único, com necessidades e
+                    preocupações específicas. Portanto, nosso compromisso é fornecer um atendimento que vá além do
+                    convencional. Valorizamos a confiança que os pacientes depositam em nós e estamos empenhados em
+                    retribuir esse voto de confiança por meio de uma assistência de qualidade que reflita nossos valores
+                    fundamentais.
+                    <br><br>
+                    Estamos aqui prontos para receber sua empresa e cuidar dos seus colaboradores com conforto e preços
+                    mais acessíveis.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="about-area default-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="about-items">
+
+                    <div class="col-md-1111 tabs-items">
+                        <!-- Tab Nav -->
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a data-toggle="tab" href="#tab1" aria-expanded="true">
+                                    <i class="fas fa-notes-medical"></i> Missão
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab2" aria-expanded="false">
+                                    <i class="fas fa-eye"></i> Visão
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                                    <i class="fas fa-users"></i> Valores
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Tab Nav -->
+                        <!-- Start Tab Content -->
+                        <div class="tab-content tab-content-info">
+                            <!-- Single Item -->
+                            <div id="tab1" class="tab-pane fade active in">
+                                <div class="info title">
+                                    <h3>Missão</h3>
+                                    <p align="justify" style="font-size:16px">
+                                        Erguemos nossa bandeira em prol da saúde e do bem-estar, comprometendo-nos
+                                        inabalavelmente com a missão de zelar pela vitalidade de nossos clientes.
+                                        Especializados em Medicina e Segurança do Trabalho, empenhamo-nos em garantir
+                                        não apenas consultas médicas, mas salvaguardar a saúde física e mental dos
+                                        trabalhadores em seus ambientes laborais. Nossa missão transcende a clínica,
+                                        abraçando a responsabilidade de guiar as empresas no cumprimento das rígidas
+                                        Leis de Segurança e Saúde Ocupacional. Dessa forma, coadjuvamos na construção de
+                                        ambientes de trabalho intrinsecamente seguros e saudáveis, conduzindo uma
+                                        sinfonia de exames e avaliações exigidos pela legislação vigente. </p>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div id="tab2" class="tab-pane fade">
+                                <div class="info title">
+                                    <h3>Visão</h3>
+                                    <p align="justify" style="font-size:16px">
+                                        Nossa visão transcende a mera prestação de serviços médicos. Almejamos
+                                        firmemente o reconhecimento como uma clínica médica exemplar, distinta por nossa
+                                        dedicação incansável à excelência em atendimento e ao cuidado primoroso que
+                                        dispensamos aos nossos pacientes. </p>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div id="tab3" class="tab-pane fade">
+                                <div class="info title">
+                                    <h3>Valores</h3>
+                                    <p align="justify" style="font-size:16px">
+                                        Nossos valores são o alicerce inabalável sobre o qual edificamos nosso
+                                        compromisso. A qualidade assistencial é nossa bússola, orientando cada
+                                        interação, cada diagnóstico e cada tratamento. Nutrimos um profundo respeito
+                                        pelo paciente, reconhecendo a confiança que nos é depositada em momentos de
+                                        vulnerabilidade. Estendemos esse respeito a todas as pessoas envolvidas, das
+                                        equipes internas aos colaboradores das empresas clientes. Cada processo e
+                                        procedimento é conduzido com uma meticulosa reverência a esses valores, pois
+                                        acreditamos que é através deles que alcançamos a verdadeira cura e bem-estar.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                        </div>
+                        <!-- End Tab Content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

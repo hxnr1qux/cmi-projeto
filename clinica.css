@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilizando o cabeçalho */
+nav {
+    background-color: #fff;
+    padding: 25px; /* Aumentando o preenchimento para aumentar a altura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usando flexbox para alinhar o conteúdo */
+    justify-content: space-between; /* Alinhando conteúdo à direita */
+    align-items: center; /* Centralizando verticalmente */
+}
+
+.navbar-brand img {
+    max-width: 200px; /* Ajustando o tamanho das imagens */
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a2090d;
+}
+
+/*FOOTER COM INFORMAÇÕES*/
+
+
+.info {
+    padding-top: 10px;
+    margin: 0px 0px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: #1D2024;
+    color: white;
+    display: flex; 
+}
+
+.horarios {
+    flex: 1;
+    margin-top: -10px;
+    padding-top: 20px;
+    height: 600px;
+    background-color: #666666;
+}
+
+.acesso{
+    background-color: #3a3939;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.acesso > h2{
+    text-align: center;
+}
+
+.contatos{
+    text-align: justify;
+}
+
+
+.contatos> h2{
+    text-align: center;
+}
+
+.acesso, .contatos {
+    flex: 1; 
+}
+
+.arrow-list {
+    list-style-type: none;
+}
+
+.arrow-list li::before {
+    content: "\2192";
+    margin-right: 8px;
+}
+
+.horarios > p{
+    margin-bottom: 50px;
+}
+
+div.breadcrump{
+    width: 50px;
+    height: 50px;
+}
+
+.contatos{
+    display: flex;
+
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.banner{
+    height: 200px;
+    width: 100%;
+    color: white;
+    background-color: #590303;
+    padding: 80px 0px 0px 30px;
+}
+
+
+
+
+
